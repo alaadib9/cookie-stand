@@ -3,17 +3,34 @@ h1, h2, h3, h4 , h5 , h5 {
 }
 p , li {
     background: rgba(3, 3, 3, 0.3);
-    border: 0.5px solid rgb(192, 22, 42);
-    padding: 3px;
-    margin: 3px;
+    border: 0.5px solid rgb(202, 164, 169);
+    padding: 1px;
+    margin: 1px;
     font-family: 'Helvetica', sans-serif;
+
     
+  }
+  div h2 {
+    background-color: rgb(238, 211, 211);
+    color: rgb(160, 94, 94);
   }
 
   body {
-    background-image: url(https://tcoyd.org/wp-content/uploads/2018/03/otherwaystogiveimage.jpg);
+    background-image: url(https://www.fg-a.com/wallpapers/white-marble-1-2018.jpg);
   }
 
   h1 {
     text-align: center;
   }
+
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+head {
+  height: 100px;
+  display: block;
+}
+
