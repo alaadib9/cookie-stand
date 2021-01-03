@@ -6,6 +6,8 @@ p {
     border: 2px solid rgb(255,84,104);
     padding: 10px;
     margin: 10px;
+    font-family: 'Helvetica', sans-serif;
+    
   }
 
   body {
