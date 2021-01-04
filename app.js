@@ -132,10 +132,10 @@ Locations.prototype.tabell = function () {
     SecondRow.appendChild(headerEleven);
     
     
-    var headerTwe = document.createElement('th');
+    var coloums = document.createElement('th');
 
-    headerTwe.textContent = '6:00pm';
-    SecondRow.appendChild(headerTwe);
+    coloums.textContent = '6:00pm';
+    SecondRow.appendChild(coloums);
 
     
     var headerThe = document.createElement('th');
@@ -149,23 +149,32 @@ Locations.prototype.tabell = function () {
     headerDaily.textContent = 'Daily Location Total';
     SecondRow.appendChild(headerDaily);
     
+////////////
+var newRow = document.createElement('tr');
+table.appendChild(newRow);
 
-    var SecondRow = document.createElement('tr');
-    table.appendChild(SecondRow);
+var nameS =[
+    Seattle,
+    Tokyo,
+    Dubai,
+    Paris,
+    Lima,	
+    Totals
+]
 
-    var coloumOne = document.createElement('tr')
-    coloumOne.textContent = 'Seattl';
-    coloumOne.appendChild(coloumOne);
-
-
-
-
-
-
+for (let index = 0; index < nameS.length; index++) {
+    testRow = document.createElement('tr');
+    table.appendChild(testRow);
+  
+    var coloums = document.createElement('td');
+    coloums.textContent = nameS[index];
+    newRow.appendChild(coloums);
+}
 
 } 
 LocationOne.tabell()
 LocationTwo.tabell()
+
 
 
 

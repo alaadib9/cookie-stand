@@ -16,8 +16,10 @@ p , li {
   }
 
   body {
-    background-image: url(https://www.fg-a.com/wallpapers/white-marble-1-2018.jpg);
+    background-image: url(https://i.pinimg.com/originals/92/c4/81/92c481ada937eb1883733aedb9c961f2.jpg);
+    margin-top: 100px;
   }
+    
 
   h1 {
     text-align: center;
@@ -30,8 +32,15 @@ a {
     text-decoration: inherit;
 }
 
-head {
-  height: 100px;
-  display: block;
+head  {
+  height: 500px;
+  color: black;
+  
+  
 }
 
+
+table, th, td , tr {
+  border: 0.5px solid rgb(196, 81, 81);
+  background-color: rgb(235, 232, 232);
+}
