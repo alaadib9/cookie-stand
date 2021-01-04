@@ -113,7 +113,7 @@ for(var k =0; k< allLocation.length;k++){
     perant.appendChild(unorder);
     for(var c = 0 ;c < allLocation[k].totalNumCookies.length;c++  ){
         var listItem = document.createElement('li'); 
-        listItem.textContent = allLocation[k].totalNumCookies[c];
+        listItem.textContent = hoursofoperation[c] + ":"+ allLocation[k].totalNumCookies[c];
         unorder.appendChild(listItem); 
     }
 }
