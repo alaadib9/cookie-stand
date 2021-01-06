@@ -51,100 +51,113 @@ parentElement.appendChild(article);
 var table = document.createElement('table');
 article.appendChild(table);
 
-Locations.prototype.tabell = function () {
+//  Locations.prototype.tabell = function () {
 
    
 
-    var SecondRow = document.createElement('tr');
-    table.appendChild(SecondRow);
-    var header = document.createElement('th');
-    header.textContent = 'Times';
-    SecondRow.appendChild(header);
+//     var SecondRow = document.createElement('tr');
+//     table.appendChild(SecondRow);
+//     var header = document.createElement('th');
+//     header.textContent = 'Times';
+//     SecondRow.appendChild(header);
 
-    var headerOne = document.createElement('th');
-    headerOne.textContent = '6:00am';
-    SecondRow.appendChild(headerOne);
+//     var headerOne = document.createElement('th');
+//     headerOne.textContent = '6:00am';
+//     SecondRow.appendChild(headerOne);
 
-    var headerTwo = document.createElement('th');
+//     var headerTwo = document.createElement('th');
 
-    headerTwo.textContent = '7:00am';
-    SecondRow.appendChild(headerTwo);
+//     headerTwo.textContent = '7:00am';
+//     SecondRow.appendChild(headerTwo);
 
-    var headerThree = document.createElement('th');
+//     var headerThree = document.createElement('th');
 
-    headerThree.textContent = '8:00am';
-    SecondRow.appendChild(headerThree);
+//     headerThree.textContent = '8:00am';
+//     SecondRow.appendChild(headerThree);
 
-    var headerFour = document.createElement('th');
+//     var headerFour = document.createElement('th');
 
-    headerFour.textContent = '9:00am';
-    SecondRow.appendChild(headerFour);
+//     headerFour.textContent = '9:00am';
+//     SecondRow.appendChild(headerFour);
 
-    var headerFive = document.createElement('th');
+//     var headerFive = document.createElement('th');
 
-    headerFive.textContent = '10:00am';
-    SecondRow.appendChild(headerFive);
+//     headerFive.textContent = '10:00am';
+//     SecondRow.appendChild(headerFive);
 
-    var headerSix = document.createElement('th');
+//     var headerSix = document.createElement('th');
 
-    headerSix.textContent = '11am';
-    SecondRow.appendChild(headerSix);
-
-
-    var headerSix = document.createElement('th');
-
-    headerSix.textContent = '12pm';
-    SecondRow.appendChild(headerSix);
+//     headerSix.textContent = '11am';
+//     SecondRow.appendChild(headerSix);
 
 
-    var headerSeven = document.createElement('th');
+//     var headerSix = document.createElement('th');
 
-    headerSeven.textContent = '1:00pm';
-    SecondRow.appendChild(headerSeven);
-
-
-    var headerEigth = document.createElement('th');
-
-    headerEigth.textContent = '2:00pm';
-    SecondRow.appendChild(headerEigth);
+//     headerSix.textContent = '12pm';
+//     SecondRow.appendChild(headerSix);
 
 
-    var headerNine = document.createElement('th');
+//     var headerSeven = document.createElement('th');
 
-    headerNine.textContent = '3:00pm';
-    SecondRow.appendChild(headerNine);
-
-
-    var headerTen = document.createElement('th');
-
-    headerTen.textContent = '4:00pm';
-    SecondRow.appendChild(headerTen);
+//     headerSeven.textContent = '1:00pm';
+//     SecondRow.appendChild(headerSeven);
 
 
-    var headerEleven = document.createElement('th');
+//     var headerEigth = document.createElement('th');
 
-    headerEleven.textContent = '5:00pm';
-    SecondRow.appendChild(headerEleven);
-
-
-    var coloums = document.createElement('th');
-
-    coloums.textContent = '6:00pm';
-    SecondRow.appendChild(coloums);
+//     headerEigth.textContent = '2:00pm';
+//     SecondRow.appendChild(headerEigth);
 
 
-    var headerThe = document.createElement('th');
+//     var headerNine = document.createElement('th');
 
-    headerThe.textContent = '7:00pmm';
-    SecondRow.appendChild(headerThe);
+//     headerNine.textContent = '3:00pm';
+//     SecondRow.appendChild(headerNine);
 
 
-    var headerDaily = document.createElement('th');
+//     var headerTen = document.createElement('th');
 
-    headerDaily.textContent = 'Daily Location Total';
-    SecondRow.appendChild(headerDaily);
+//     headerTen.textContent = '4:00pm';
+//     SecondRow.appendChild(headerTen);
 
+
+//     var headerEleven = document.createElement('th');
+
+//     headerEleven.textContent = '5:00pm';
+//     SecondRow.appendChild(headerEleven);
+
+
+//     var coloums = document.createElement('th');
+
+//     coloums.textContent = '6:00pm';
+//     SecondRow.appendChild(coloums);
+
+
+//     var headerThe = document.createElement('th');
+
+//     headerThe.textContent = '7:00pmm';
+//     SecondRow.appendChild(headerThe);
+
+
+//     var headerDaily = document.createElement('th');
+
+//     headerDaily.textContent = 'Daily Location Total';
+//     SecondRow.appendChild(headerDaily);
+
+// }
+
+Locations.prototype.houres = function() {
+    for (var h = 0; index < hoursofoperation.length; h++) {
+        var SecondRow = document.createElement('tr');
+        table.appendChild(SecondRow);
+        var header = document.createElement('th');
+        header.textContent = [];
+        SecondRow.appendChild(header);
+        
+        
+    }
 }
+
 
 
 
@@ -167,7 +180,7 @@ Locations.prototype.bodyTable = function () {
 var LocationOne = new Locations('seattle', 65, 23, 6.3);
 LocationOne.avgHour()
 console.log(LocationOne);
-LocationOne.tabell()
+ LocationOne.hours
 LocationOne.bodyTable();
 
 
