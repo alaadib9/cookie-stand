@@ -45,3 +45,11 @@ img {
     margin-top: 50px;
     margin-left: 400px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+li{
+    background-color: rgb(236, 228, 241);
+}
