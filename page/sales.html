@@ -1,21 +1,55 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
+
 <html>
-    <head>
+
+<head>
     <meta charset="utf-8">
     <title>Salmon Cookies</title>
-    <a href="../index.html"> Page </a>
-     <link rel="stylesheet" href="../css/cookie.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-    </style>
-    </head>
-    <body>
-        
-        <div id="list">
-            
-        </div>
-        <script src="../app.js"></script>
-    </body>
-</html>
+    <link rel="stylesheet" href="../css/cookie.css">
+    <a href="../index.html"> Our shope Page </a>
 
+</head>
+
+<body>
+    <h1>This is our sales page </h1>
+    <h2>you can add a new location </h2>
+    <main>
+
+        <form id="addNewLocation">
+            <fieldset>
+
+            <label for="loctionName">
+                location Name :
+            </label>
+            <input name="loctionName" id="loctionName"type="text">
+            <br>
+            <label for="maxhour">
+                maxhourlycustomer :
+            </label>
+            <input name="maxhour" id= "maxhour" type="number">
+            <br>
+            <label for="minhour">
+                minhourlycustomer :
+            </label>
+            <input name="minhour" id= "minhour" type="number">
+            <br>
+            <label for="avghour">
+                avgSale :
+            </label>
+            <input name="avghour" id= "avghour" type="number">
+            <br>
+            <input type="submit" value="Add a location">
+
+        </fieldset>
+        </form>
+        <div id="list"></div>
+        
+    </main>
+
+<footer></footer>
+
+
+    <script src="../app.js"></script>
+</body>
+
+</html>

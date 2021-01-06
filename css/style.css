@@ -2,10 +2,6 @@
         font-family: 'Alegreya', serif;
        background-image: url(https://t4.ftcdn.net/jpg/03/70/49/87/360_F_370498716_dLsaHESFAHnEV3a6aOqXTBV6fvslMgGq.jpg);
  }
-h1 {
-    text-align: center;
-    font-family: "Lucida Console", "Courier New", monospace;
-}
 
 h2 {
     text-align: center;
@@ -24,6 +20,8 @@ h2 {
     position: relative;
     background-repeat: no-repeat;
     background-position: center top;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 div > p  {
@@ -45,7 +43,13 @@ ol {
 }
 img {
     margin-top: 50px;
+<<<<<<< HEAD
+    margin-left: 400px;
+}
+
+=======
     margin-left: 300px;
     background-color: rgb(255, 255, 255);
 }
  
+>>>>>>> main
