@@ -1,3 +1,6 @@
+
+
+
 'use strict';
 var avgCustomer = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
@@ -24,7 +27,6 @@ All.prototype.avgHour = function () {
 
     }
     this.dailyTotal.push(this.total);
-    console.log(this.dailyTotal);
 
 }
 
@@ -76,40 +78,11 @@ All.prototype.bodyTable = function () {
 
 }
 
-// var locations = [
-//     'seattle',
-//     'tokyo',
-//     'dubai',
-//     'paris',
-//     'lima'
-// ]
-
-// All.prototype.lastLine = function () {
-//     var final = document.createElement('td');
-//     final.textContent = 'Totals'
-
-
-//     var endTotal = 0;
-//     for (var i = 0; i < avgCustomer.length; i++) {
-//         var totalPerHour = 0;
-//         var hour = document.createElement('td')
-//         for (var d = 0; d < locations.length; d++) {
-//             totalPerHour += locations[d].avgCustomersHour[i]
-
-//         }
-
-
-//     }
-
-// }
-
-
 
 
 
 var locationOne = new All('seattle', 65, 23, 6.3);
 // locationOne.avgHour()
-console.log(locationOne)
 locationOne.tabel()
 locationOne.avgHour()
 locationOne.bodyTable();
@@ -118,20 +91,17 @@ locationOne.bodyTable();
 
 var locationTwo = new All('tokyo', 24, 3, 1.2);
 locationTwo.avgHour()
-console.log(locationTwo)
 locationTwo.bodyTable();
 
 
 var locationThree = new All('dubai', 38, 11, 3.7);
 locationThree.avgHour()
-console.log(locationThree)
 locationThree.bodyTable();
 
 
 
 var locationFour = new All('paris', 38, 20, 2.3);
 locationFour.avgHour()
-console.log(locationFour)
 locationFour.bodyTable();
 
 
@@ -143,20 +113,47 @@ locationFive.bodyTable();
 
 
 
+var townsName = [locationOne, locationTwo, locationThree, locationFour, locationFive];
+
+function lastLine() {
+    
+    var endRow = document.createElement('tr');
+    table.appendChild(endRow);
+
+    var totalR = document.createElement('th');
+    endRow.appendChild(totalR);
+    totalR.textContent = 'Totals';
+    var totalTotal = 0;
+
+    for (var i = 0; i < avgCustomer.length; i++) {
+        var sumHour = 0;
+        for (let j = 0; j < townsName.length; j++) {
+            sumHour = sumHour + townsName[j].avgCustomersHour[i];
+        }
+        var endC = document.createElement('td');
+        endRow.appendChild(endC);
+        endC.textContent = sumHour;
+        totalTotal = totalTotal + sumHour;
+    }
+    var lastTotal = document.createElement('td');
+    endRow.appendChild(lastTotal);
+    lastTotal.textContent = totalTotal;
+}
+lastLine();
+
+
+
 var addNewLocation = document.getElementById("addNewLocation");
 addNewLocation.addEventListener('submit' , function (event) {
     event.preventDefault();
+    table.removeChild(table.lastChild);
     var loctionName = event.target.loctionName.value;
     var maxhourlycustomer = event.target.maxhour.value;
-    var minmum = event.target.minhour.value;
+var minmum = event.target.minhour.value;
     var avg = event.target.avghour.value;
     var newLocation = new All (loctionName, maxhourlycustomer, minmum, avg)
-    console.log(newLocation)
+    townsName.push(newLocation);
     newLocation.avgHour();
     newLocation.bodyTable();
+    lastLine();
 } );
-
-
-
-
-
